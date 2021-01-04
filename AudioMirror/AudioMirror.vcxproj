@@ -150,11 +150,6 @@
       <AdditionalDependencies>$(DDK_LIB_PATH)\portcls.lib;$(DDK_LIB_PATH)\stdunk.lib;$(DDK_LIB_PATH)\libcntpr.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <ShowProgress>LinkVerbose</ShowProgress>
     </Link>
-    <PostBuildEvent>
-      <Command>xcopy "$(OutputPath)$(AssemblyName)" "F:\Programs\VirtualBox VMs\Shared\kmdf_files" /y /e
-</Command>
-      <Message>Copying driver files to VBox share</Message>
-    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <Inf Include="AudioMirror.inf" />
